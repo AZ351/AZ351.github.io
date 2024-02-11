@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.bac{
+    background: url(../img/web1920.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+h1{
+    color: #fff;
+    font-size: 1.8rem;
+    z-index: 1;
+}
+p{
+    color: #fff;
+    font-size: 2rem;
+    z-index: 1;
+    margin-top: 22px;
+}
+.bac_img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+	-webkit-animation:myfirst 3.3s;
+    -webkit-animation-iteration-count:infinite;
+}
+.logo_img{
+    width: 411px;
+    height: 111px;
+    background: url(../img/back.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+}
+@-webkit-keyframes myfirst
+{
+	0%   {opacity: 100%;width: 141%;height: 141%;}
+	25%  {opacity: 50%;width: 100%;height: 100%;}
+	50%  {opacity: 20%;width: 88%;height: 88%;}
+	75%  {opacity: 50%;width: 100%;height: 100%;}
+	100% {opacity: 100%;width: 141%;height: 141%;}
+}
+
+.kz{
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+	bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.kz_list{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.kz_list button{
+    width: 100px;
+    height: 33px;
+    margin-bottom: 1px;
+}
+#name{
+    color: #fff;
+    font-size: 2rem;
+    z-index: 1;
+    margin-bottom: 22px;
+}
+.md{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 22px;
+}
+.md_list{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 8px;
+}
+.md_list h1{
+    color: #fff;
+    font-size: 2rem;
+}

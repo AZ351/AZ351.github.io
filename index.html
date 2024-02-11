@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+		<script>
+			// Set the date we're counting down to
+			var countDownDate = new Date("Feb 9, 2024 20:30:00").getTime();
+
+			// Update the count down every 1 second
+			var x = setInterval(function() {
+
+				// Get todays date and time
+				var now = new Date().getTime();
+				
+				// Find the distance between now an the count down date
+				var distance = countDownDate - now;
+				
+				// Time calculations for days, hours, minutes and seconds
+				var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+				var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+				var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+				var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+				
+				// Output the result in an element with id="demo"
+				document.getElementById("demo").innerHTML = days + "天 " + hours + "小时 "
+				+ minutes + "分钟 " + seconds + "秒 ";
+				
+				// If the count down is over, write some text 
+				if (distance < 0) {
+					clearInterval(x);
+					document.getElementById("demo").innerHTML = "EXPIRED";
+				}
+			}, 1000);
+		</script>
+	</head>
+	<body>
+		<div class="bac">
+			<img class="bac_img" src="img/web1920(1).png">
+			<div class="logo_img"> </div>
+			<h1>距离[欢乐除夕夜]开始还有</h1>
+			<p id="demo"></p>
+		</div>
+	</body>
+</html>
